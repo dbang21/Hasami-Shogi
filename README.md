@@ -17,24 +17,6 @@ i R B . . . . . . .
 
 Locations on the board will be specified using "algebraic notation", with rows labeled a-i and rows labeled 1-9, as shown in the diagram of the starting position shown on the Wikipedia page.
 
-You're not required to print the board, but you will probably find it very useful for testing purposes.
-
-Tip: Probably the easiest way of representing the board is to use a list of lists.
-
-Your HasamiShogiGame class must include the following:
-* An init method that initializes any data members.
-* A method called `get_game_state` that takes no parameters and returns 'UNFINISHED', 'RED_WON' or 'BLACK_WON'.
-* A method called `get_active_player` that takes no parameters and returns whose turn it is - either 'RED' or 'BLACK'.
-* A method called `get_num_captured_pieces` that takes one parameter, 'RED' or 'BLACK', and returns the number of pieces of that color that have been captured.
-* A method called `make_move` that takes two parameters - strings that represent the square moved from and the square moved to.  For example, make_move('b3', 'b9').  If the square being moved from does not contain a piece belonging to the player whose turn it is, or if the indicated move is not legal, or if the game has already been won, then it should just return False.  Otherwise it should make the indicated move, remove any captured pieces, update the game state if necessary, update whose turn it is, and return True.
-* A method called `get_square_occupant` that takes one parameter, a string representing a square (such as 'i7'), and returns 'RED', 'BLACK', or 'NONE', depending on whether the specified square is occupied by a red piece, a black piece, or neither.
-
-Feel free to add whatever other classes, methods, or data members you want.  All data members must be private.  Every class should have an init method that initializes all of the data members for that class.
-
-
-
-
-
 Here's a very simple example of how the class could be used:
 ```
 game = HasamiShogiGame()
@@ -43,7 +25,3 @@ print(game.get_active_player())
 print(game.get_square_occupant('a4'))
 print(game.get_game_state())
 ```
-The file must be named: **HasamiShogiGame.py**
-# Hasami-Shogi
-# Hasami-Shogi
-# Hasami-Shogi
